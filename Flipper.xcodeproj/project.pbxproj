@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E307E21F8F6250084FF31 /* AppDelegate.swift */; };
+		534E308621F8F6280084FF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534E308521F8F6280084FF31 /* Assets.xcassets */; };
+		534E308921F8F6280084FF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534E308721F8F6280084FF31 /* LaunchScreen.storyboard */; };
+		534E309121F8F7730084FF31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534E309021F8F7730084FF31 /* GoogleService-Info.plist */; };
+		534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E309221F8F9CC0084FF31 /* ComingSoonViewController.swift */; };
+		534E309521F8F9F70084FF31 /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E309421F8F9F70084FF31 /* AppFlowController.swift */; };
+		534E309B21F8FB070084FF31 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E309A21F8FB070084FF31 /* MainTabBarController.swift */; };
+		534E309E21F8FBBE0084FF31 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E309D21F8FBBE0084FF31 /* UI.swift */; };
+		534E30A421F8FED90084FF31 /* Kollektif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534E30A321F8FD250084FF31 /* Kollektif-Bold.ttf */; };
+		534E30A521F8FEDB0084FF31 /* Kollektif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534E30A221F8FD250084FF31 /* Kollektif-BoldItalic.ttf */; };
+		534E30A621F8FEDE0084FF31 /* Kollektif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534E30A021F8FD250084FF31 /* Kollektif-Italic.ttf */; };
+		534E30A721F8FEE20084FF31 /* Kollektif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534E30A121F8FD250084FF31 /* Kollektif.ttf */; };
+		534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30A921F901190084FF31 /* UIColor+HexValue.swift */; };
+		534E30AC21F901630084FF31 /* UIViewController+AddRemoveChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30AB21F901630084FF31 /* UIViewController+AddRemoveChildren.swift */; };
+		534E30AE21F902130084FF31 /* FlipperDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30AD21F902130084FF31 /* FlipperDevice.swift */; };
+		534E30B021F908D60084FF31 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30AF21F908D60084FF31 /* SplashViewController.swift */; };
+		534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30B221F911620084FF31 /* ProfileFlowController.swift */; };
+		534E30B621F912550084FF31 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30B521F912550084FF31 /* BorderedButton.swift */; };
+		534E30B821F912F70084FF31 /* UIButton+SetBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30B721F912F70084FF31 /* UIButton+SetBackgroundColor.swift */; };
+		96D87A38AF9F81A478296C04 /* Pods_Flipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		534E307B21F8F6250084FF31 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		534E307E21F8F6250084FF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		534E308521F8F6280084FF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		534E308821F8F6280084FF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		534E308A21F8F6280084FF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534E309021F8F7730084FF31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		534E309221F8F9CC0084FF31 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		534E309421F8F9F70084FF31 /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		534E309A21F8FB070084FF31 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		534E309D21F8FBBE0084FF31 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		534E30A021F8FD250084FF31 /* Kollektif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-Italic.ttf"; sourceTree = "<group>"; };
+		534E30A121F8FD250084FF31 /* Kollektif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kollektif.ttf; sourceTree = "<group>"; };
+		534E30A221F8FD250084FF31 /* Kollektif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-BoldItalic.ttf"; sourceTree = "<group>"; };
+		534E30A321F8FD250084FF31 /* Kollektif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-Bold.ttf"; sourceTree = "<group>"; };
+		534E30A921F901190084FF31 /* UIColor+HexValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexValue.swift"; sourceTree = "<group>"; };
+		534E30AB21F901630084FF31 /* UIViewController+AddRemoveChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemoveChildren.swift"; sourceTree = "<group>"; };
+		534E30AD21F902130084FF31 /* FlipperDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperDevice.swift; sourceTree = "<group>"; };
+		534E30AF21F908D60084FF31 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		534E30B221F911620084FF31 /* ProfileFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowController.swift; sourceTree = "<group>"; };
+		534E30B521F912550084FF31 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		534E30B721F912F70084FF31 /* UIButton+SetBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColor.swift"; sourceTree = "<group>"; };
+		6A346D75FD1AD7E7B2847C9C /* Pods-Flipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.debug.xcconfig"; sourceTree = "<group>"; };
+		840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		534E307821F8F6250084FF31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D87A38AF9F81A478296C04 /* Pods_Flipper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		212CF9A7D943B2D4A00A3807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		534E307221F8F6250084FF31 = {
+			isa = PBXGroup;
+			children = (
+				534E307D21F8F6250084FF31 /* Flipper */,
+				534E307C21F8F6250084FF31 /* Products */,
+				8178001F3493280CC7FE9160 /* Pods */,
+				212CF9A7D943B2D4A00A3807 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		534E307C21F8F6250084FF31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				534E307B21F8F6250084FF31 /* Flipper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		534E307D21F8F6250084FF31 /* Flipper */ = {
+			isa = PBXGroup;
+			children = (
+				534E308A21F8F6280084FF31 /* Info.plist */,
+				534E309021F8F7730084FF31 /* GoogleService-Info.plist */,
+				534E30AF21F908D60084FF31 /* SplashViewController.swift */,
+				534E308721F8F6280084FF31 /* LaunchScreen.storyboard */,
+				534E307E21F8F6250084FF31 /* AppDelegate.swift */,
+				534E309421F8F9F70084FF31 /* AppFlowController.swift */,
+				534E309621F8FA2C0084FF31 /* Features */,
+				534E309721F8FA360084FF31 /* Extensions */,
+				534E309821F8FA410084FF31 /* Components */,
+				534E309921F8FA4D0084FF31 /* Resources */,
+			);
+			path = Flipper;
+			sourceTree = "<group>";
+		};
+		534E309621F8FA2C0084FF31 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				534E309221F8F9CC0084FF31 /* ComingSoonViewController.swift */,
+				534E309A21F8FB070084FF31 /* MainTabBarController.swift */,
+				534E30B121F9114B0084FF31 /* Profile */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		534E309721F8FA360084FF31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				534E30A821F901000084FF31 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		534E309821F8FA410084FF31 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				534E309C21F8FBB00084FF31 /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		534E309921F8FA4D0084FF31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				534E309F21F8FD0F0084FF31 /* Kollektif-Font */,
+				534E308521F8F6280084FF31 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		534E309C21F8FBB00084FF31 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				534E309D21F8FBBE0084FF31 /* UI.swift */,
+				534E30AD21F902130084FF31 /* FlipperDevice.swift */,
+				534E30B421F912390084FF31 /* Buttons */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		534E309F21F8FD0F0084FF31 /* Kollektif-Font */ = {
+			isa = PBXGroup;
+			children = (
+				534E30A321F8FD250084FF31 /* Kollektif-Bold.ttf */,
+				534E30A221F8FD250084FF31 /* Kollektif-BoldItalic.ttf */,
+				534E30A021F8FD250084FF31 /* Kollektif-Italic.ttf */,
+				534E30A121F8FD250084FF31 /* Kollektif.ttf */,
+			);
+			path = "Kollektif-Font";
+			sourceTree = "<group>";
+		};
+		534E30A821F901000084FF31 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				534E30A921F901190084FF31 /* UIColor+HexValue.swift */,
+				534E30AB21F901630084FF31 /* UIViewController+AddRemoveChildren.swift */,
+				534E30B721F912F70084FF31 /* UIButton+SetBackgroundColor.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		534E30B121F9114B0084FF31 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				534E30B221F911620084FF31 /* ProfileFlowController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		534E30B421F912390084FF31 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				534E30B521F912550084FF31 /* BorderedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		8178001F3493280CC7FE9160 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A346D75FD1AD7E7B2847C9C /* Pods-Flipper.debug.xcconfig */,
+				499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		534E307A21F8F6250084FF31 /* Flipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534E308D21F8F6280084FF31 /* Build configuration list for PBXNativeTarget "Flipper" */;
+			buildPhases = (
+				1EB9BE62001C832D9D08FDC4 /* [CP] Check Pods Manifest.lock */,
+				534E307721F8F6250084FF31 /* Sources */,
+				534E307821F8F6250084FF31 /* Frameworks */,
+				534E307921F8F6250084FF31 /* Resources */,
+				E03AC030E9DB112C2BA8FF0E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flipper;
+			productName = Flipper;
+			productReference = 534E307B21F8F6250084FF31 /* Flipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		534E307321F8F6250084FF31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Flipper;
+				TargetAttributes = {
+					534E307A21F8F6250084FF31 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 534E307621F8F6250084FF31 /* Build configuration list for PBXProject "Flipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 534E307221F8F6250084FF31;
+			productRefGroup = 534E307C21F8F6250084FF31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				534E307A21F8F6250084FF31 /* Flipper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		534E307921F8F6250084FF31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534E30A721F8FEE20084FF31 /* Kollektif.ttf in Resources */,
+				534E30A521F8FEDB0084FF31 /* Kollektif-BoldItalic.ttf in Resources */,
+				534E308921F8F6280084FF31 /* LaunchScreen.storyboard in Resources */,
+				534E30A621F8FEDE0084FF31 /* Kollektif-Italic.ttf in Resources */,
+				534E30A421F8FED90084FF31 /* Kollektif-Bold.ttf in Resources */,
+				534E309121F8F7730084FF31 /* GoogleService-Info.plist in Resources */,
+				534E308621F8F6280084FF31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EB9BE62001C832D9D08FDC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flipper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03AC030E9DB112C2BA8FF0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		534E307721F8F6250084FF31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534E30AE21F902130084FF31 /* FlipperDevice.swift in Sources */,
+				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
+				534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */,
+				534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */,
+				534E30B821F912F70084FF31 /* UIButton+SetBackgroundColor.swift in Sources */,
+				534E30B021F908D60084FF31 /* SplashViewController.swift in Sources */,
+				534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */,
+				534E30B621F912550084FF31 /* BorderedButton.swift in Sources */,
+				534E30AC21F901630084FF31 /* UIViewController+AddRemoveChildren.swift in Sources */,
+				534E309B21F8FB070084FF31 /* MainTabBarController.swift in Sources */,
+				534E309E21F8FBBE0084FF31 /* UI.swift in Sources */,
+				534E309521F8F9F70084FF31 /* AppFlowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		534E308721F8F6280084FF31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534E308821F8F6280084FF31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		534E308B21F8F6280084FF31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		534E308C21F8F6280084FF31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		534E308E21F8F6280084FF31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A346D75FD1AD7E7B2847C9C /* Pods-Flipper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NK52B9LMW;
+				INFOPLIST_FILE = Flipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipper.flipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		534E308F21F8F6280084FF31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NK52B9LMW;
+				INFOPLIST_FILE = Flipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipper.flipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		534E307621F8F6250084FF31 /* Build configuration list for PBXProject "Flipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534E308B21F8F6280084FF31 /* Debug */,
+				534E308C21F8F6280084FF31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534E308D21F8F6280084FF31 /* Build configuration list for PBXNativeTarget "Flipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534E308E21F8F6280084FF31 /* Debug */,
+				534E308F21F8F6280084FF31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 534E307321F8F6250084FF31 /* Project object */;
+}
