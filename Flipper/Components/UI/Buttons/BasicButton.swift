@@ -72,6 +72,6 @@ extension BasicButton {
     private func setupButtonConstraints() {
         guard let title = titleLabel?.text as NSString? else { return }
         let titleLabelSize = title.size(withAttributes: [NSAttributedString.Key.font: UI.Font.button])
-        self.easy.layout(Width(titleLabelSize.width + 60), Height(titleLabelSize.height + 22))
+        self.easy.layout(Width(titleLabelSize.width + 40), Height(titleLabelSize.height + 22))
     }
 }

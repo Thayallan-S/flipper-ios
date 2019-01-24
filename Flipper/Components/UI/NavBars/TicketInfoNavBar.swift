@@ -1,23 +1,23 @@
 //
-//  GeneralNavBar.swift
+//  TicketInfoNavBar.swift
 //  Flipper
 //
-//  Created by Thayallan Srinathan on 2019-01-23.
+//  Created by Thayallan Srinathan  on 2019-01-24.
 //  Copyright © 2019 Flipper. All rights reserved.
 //
 
 import UIKit
-import EasyPeasy
 import Then
+import EasyPeasy
 
-protocol GeneralNavBarDelegate: class {
+protocol TicketInfoNavBarDelegate: class {
     func backButtonTap()
 }
 
-class GeneralNavBar: UIView {
+class TicketInfoNavBar: UIView {
     
-    weak var delegate: GeneralNavBarDelegate?
-
+    weak var delegate: TicketInfoNavBarDelegate?
+    
     private let contentView = UIView()
     
     private let headerLabel = UILabel().then {
@@ -55,7 +55,7 @@ class GeneralNavBar: UIView {
     }
 }
 
-extension GeneralNavBar {
+extension TicketInfoNavBar {
     @objc func handleButtonTap() {
         delegate?.backButtonTap()
     }
@@ -69,7 +69,7 @@ extension GeneralNavBar {
     }
     func layoutViews() {
         addSubview(contentView)
-        contentView.easy.layout(Edges(), Width(375), Height(110), CenterX())
+        contentView.easy.layout(Edges(), Width(375), Height(160), CenterX())
         
         contentView.addSubview(shadowView)
         shadowView.easy.layout(Edges())

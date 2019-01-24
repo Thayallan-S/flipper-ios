@@ -17,6 +17,8 @@ class ProfileOnboardingViewController: UIViewController {
         $0.pinToText()
     }
     private var tapGestureRecognizer: UITapGestureRecognizer!
+    
+    private let navBar = TicketInfoNavBar(header: "Ticket Information", subHeader: "Click on the box and scan your tickets to verify.")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,9 @@ extension ProfileOnboardingViewController {
     }
     
     func layoutViews() {
+        view.addSubview(navBar)
+        navBar.easy.layout(Top(), Width(375), CenterX())
+        
         view.addSubview(textField)
         textField.easy.layout(CenterX(), CenterY(), Width(300), Height(50))
         

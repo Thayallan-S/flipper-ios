@@ -31,6 +31,9 @@
 		534E30C221F939B10084FF31 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C121F939B10084FF31 /* BasicButton.swift */; };
 		534E30C421F9407A0084FF31 /* StateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C321F9407A0084FF31 /* StateTextField.swift */; };
 		534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C621F94C210084FF31 /* GeneralNavBar.swift */; };
+		539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */; };
+		539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */; };
+		539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */; };
 		96D87A38AF9F81A478296C04 /* Pods_Flipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		534E30C121F939B10084FF31 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		534E30C321F9407A0084FF31 /* StateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTextField.swift; sourceTree = "<group>"; };
 		534E30C621F94C210084FF31 /* GeneralNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavBar.swift; sourceTree = "<group>"; };
+		539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxNavBar.swift; sourceTree = "<group>"; };
+		539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterNavBar.swift; sourceTree = "<group>"; };
+		539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoNavBar.swift; sourceTree = "<group>"; };
 		6A346D75FD1AD7E7B2847C9C /* Pods-Flipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.debug.xcconfig"; sourceTree = "<group>"; };
 		840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				534E30C621F94C210084FF31 /* GeneralNavBar.swift */,
+				539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */,
+				539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */,
+				539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */,
 			);
 			path = NavBars;
 			sourceTree = "<group>";
@@ -359,11 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */,
 				534E30AE21F902130084FF31 /* FlipperDevice.swift in Sources */,
 				534E30C421F9407A0084FF31 /* StateTextField.swift in Sources */,
 				534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */,
 				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,
+				539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */,
+				539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */,
 				534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */,
 				534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */,
 				534E30B821F912F70084FF31 /* UIButton+SetBackgroundColor.swift in Sources */,

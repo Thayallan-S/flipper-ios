@@ -35,6 +35,6 @@ extension SplashViewController {
         backgroundImage.easy.layout(Edges())
         
         view.addSubview(flipperLogo)
-        flipperLogo.easy.layout(CenterX(), Top(340), Width(180), Height(50))
+        flipperLogo.easy.layout(CenterX(), Width(180), Height(50), FlipperDevice().isiPhoneX() ? Top(300) : Top(340))
     }
 }
