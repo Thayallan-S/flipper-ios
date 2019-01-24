@@ -13,6 +13,7 @@ class MainTabBarController: UITabBarController {
     let csvc1 = ComingSoonViewController()
     let csvc2 = ComingSoonViewController()
     let csvc3 = ComingSoonViewController()
+    let profileController = ProfileOnboardingViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,8 @@ extension MainTabBarController {
         self.viewControllers = [vc1, vc2, vc3]
         
         selectedIndex = 1
+        
+        //profileController.start()
     }
     
     func createFirstViewController() -> UIViewController {
@@ -65,7 +68,7 @@ extension MainTabBarController {
     }
     
     func createThirdViewController() -> UIViewController {
-        var navigationVC = UINavigationController(rootViewController: csvc3).then {
+        var navigationVC = UINavigationController(rootViewController: profileController).then {
             $0.navigationBar.isHidden = true
         }
         navigationVC = setupTabBarItem(for: navigationVC, title: "PROFILE", imageName: "profileIcon", selectedImageName: "selectedProfileIcon")

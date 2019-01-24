@@ -1,5 +1,5 @@
 //
-//  BorderedButton.swift
+//  BasicButton.swift
 //  Flipper
 //
 //  Created by Thayallan Srinathan on 2019-01-23.
@@ -9,30 +9,13 @@
 import UIKit
 import EasyPeasy
 
-// MARK: - BorderedButton Enumeration Definitions
-extension BorderedButton {
-    enum ColorScheme {
-        case whiteOnBlue
-        case blueOnWhite
-    }
-    
-    enum Style {
-        case normal
-        case slim
-    }
-}
 
 // MARK: - BorderedButton Class Definition
-class BorderedButton: UIButton {
+class BasicButton: UIButton {
     
     var buttonTapHandler: (() -> Void)?
-    private var colorScheme: ColorScheme
-    private var style: Style
     
-    init(title: String, colorScheme: ColorScheme = .whiteOnBlue, style: Style = .normal) {
-        self.colorScheme = colorScheme
-        self.style = style
-        
+    init(title: String) {
         super.init(frame: .zero)
         
         setTitle(title, for: .normal)
@@ -45,13 +28,14 @@ class BorderedButton: UIButton {
 }
 
 // MARK: - UIButton Override Functions
-extension BorderedButton {
+extension BasicButton {
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.borderColor = UI.Colors.swishBlue.cgColor
+        layer.borderColor = UI.Colors.heatherGrey.cgColor
         layer.borderWidth = 1.5
         layer.cornerRadius = frame.height / 10
         clipsToBounds = true
+        titleLabel?.textColor = UI.Colors.swishBlue
     }
     
     override func setTitle(_ title: String?, for state: UIControl.State) {
@@ -62,7 +46,7 @@ extension BorderedButton {
 }
 
 // MARK: - Public Functions
-extension BorderedButton {
+extension BasicButton {
     func pinToEdges(spacing: Float = 40) {
         let size = UIScreen.main.bounds
         self.easy.layout(Width(size.width - CGFloat(spacing * 2)))
@@ -74,31 +58,20 @@ extension BorderedButton {
 }
 
 // MARK: - Setup Properties
-extension BorderedButton {
+extension BasicButton {
     private func setupProperties() {
-        setupColorScheme()
+        setBackgroundColor(UI.Colors.white, for: .normal)
         addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-        titleLabel?.font = self.style == .normal ? UI.Font.button : UI.Font.button
+        titleLabel?.font = UI.Font.button
     }
     
     @objc func didTapButton() {
         buttonTapHandler?()
     }
-    
-    private func setupColorScheme() {
-        switch self.colorScheme {
-        case .whiteOnBlue:
-            setTitleColor(UI.Colors.white, for: .normal)
-            setBackgroundColor(UI.Colors.swishBlue, for: .normal)
-        case .blueOnWhite:
-            setTitleColor(UI.Colors.swishBlue, for: .normal)
-            setBackgroundColor(UI.Colors.white, for: .normal)
-        }
-    }
-    
+   
     private func setupButtonConstraints() {
         guard let title = titleLabel?.text as NSString? else { return }
         let titleLabelSize = title.size(withAttributes: [NSAttributedString.Key.font: UI.Font.button])
-        self.easy.layout(Width(titleLabelSize.width + (self.style == .normal ? 60 : 35)), Height(titleLabelSize.height + (self.style == .normal ? 22 : 11)))
+        self.easy.layout(Width(titleLabelSize.width + 40), Height(titleLabelSize.height + 22))
     }
 }
