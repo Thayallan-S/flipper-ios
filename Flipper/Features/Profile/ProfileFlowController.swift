@@ -13,7 +13,7 @@ class ProfileFlowController: UIViewController {
     private let profileOnboardingViewController = ProfileOnboardingViewController()
     private let logInViewController = ProfileLogInViewController()
     private let signUpViewController = ProfileSignUpViewController()
-    private let csvc = ComingSoonViewController()
+    private let profileViewController = ProfileViewController()
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -22,6 +22,7 @@ class ProfileFlowController: UIViewController {
         logInViewController.headerNavBar.delegate = self
         logInViewController.delegate = self
         signUpViewController.headerNavBar.delegate = self
+        signUpViewController.delegate = self
         
     }
     
@@ -85,6 +86,6 @@ extension ProfileFlowController: ProfileLogInViewDelegate {
 extension ProfileFlowController: ProfileSignUpViewDelegate {
     func didSignUp() {
         remove(childController: signUpViewController)
-        add(childController: csvc)
+        add(childController: profileViewController)
     }
 }

@@ -32,7 +32,7 @@ extension BasicButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.borderColor = UI.Colors.heatherGrey.cgColor
-        layer.borderWidth = 1.5
+        layer.borderWidth = 0.5
         layer.cornerRadius = frame.height / 10
         clipsToBounds = true
         titleLabel?.textColor = UI.Colors.swishBlue

@@ -26,7 +26,7 @@ extension BorderedButton {
 class BorderedButton: UIButton {
     
     var buttonTapHandler: (() -> Void)?
-    private var colorScheme: ColorScheme
+    var colorScheme: ColorScheme
     private var style: Style
     
     init(title: String, colorScheme: ColorScheme = .whiteOnBlue, style: Style = .normal) {
@@ -49,7 +49,7 @@ extension BorderedButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.borderColor = UI.Colors.swishBlue.cgColor
-        layer.borderWidth = 1.5
+        layer.borderWidth = 0.5
         layer.cornerRadius = frame.height / 10
         clipsToBounds = true
     }
@@ -85,14 +85,16 @@ extension BorderedButton {
         buttonTapHandler?()
     }
     
-    private func setupColorScheme() {
+    func setupColorScheme() {
         switch self.colorScheme {
         case .whiteOnBlue:
             setTitleColor(UI.Colors.white, for: .normal)
             setBackgroundColor(UI.Colors.swishBlue, for: .normal)
+            layer.borderColor = UI.Colors.swishBlue.cgColor
         case .blueOnWhite:
             setTitleColor(UI.Colors.swishBlue, for: .normal)
             setBackgroundColor(UI.Colors.white, for: .normal)
+            layer.borderColor = UI.Colors.heatherGrey.cgColor
         }
     }
     
