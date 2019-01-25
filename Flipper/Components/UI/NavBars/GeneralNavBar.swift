@@ -36,6 +36,8 @@ class GeneralNavBar: UIView {
     
     private let shadowView = UIView()
     
+    var viewTag: Int = 0
+    
     private let selectionButton = UIButton().then {
         $0.addTarget(self, action: #selector(handleButtonTap), for: .touchUpInside)
     }
@@ -57,13 +59,14 @@ class GeneralNavBar: UIView {
 
 extension GeneralNavBar {
     @objc func handleButtonTap() {
+        viewTag = 1
         delegate?.backButtonTap()
     }
     func setupProperties() {
         shadowView.backgroundColor = UI.Colors.white
         shadowView.layer.shadowOpacity = 0.2
         shadowView.layer.shadowColor = UI.Colors.black.cgColor
-        shadowView.layer.shadowRadius = 10.0
+        shadowView.layer.shadowRadius = 5.0
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 1)
         shadowView.clipsToBounds = false
     }
@@ -75,12 +78,15 @@ extension GeneralNavBar {
         shadowView.easy.layout(Edges())
         
         contentView.addSubview(headerLabel)
-        headerLabel.easy.layout(FlipperDevice().isiPhoneX() ? Top(56) : Top(44), Left(65))
+        headerLabel.easy.layout(FlipperDevice().isiPhoneX() ? Top(50) : Top(40), Left(65))
         
         contentView.addSubview(subHeaderLabel)
         subHeaderLabel.easy.layout(Top(5).to(headerLabel), Left(65))
         
         contentView.addSubview(backIcon)
-        backIcon.easy.layout(Left(20), Width(22), Height(15), FlipperDevice().isiPhoneX() ? Top(58) : Top(50))
+        backIcon.easy.layout(Left(20), Width(27), Height(18), FlipperDevice().isiPhoneX() ? Top(50) : Top(45))
+        
+        contentView.addSubview(selectionButton)
+        selectionButton.easy.layout(Left(20), Width(27), Height(18), FlipperDevice().isiPhoneX() ? Top(52) : Top(45))
     }
 }

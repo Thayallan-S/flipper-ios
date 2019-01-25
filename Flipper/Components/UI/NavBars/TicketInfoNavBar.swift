@@ -61,10 +61,10 @@ extension TicketInfoNavBar {
     }
     func setupProperties() {
         shadowView.backgroundColor = UI.Colors.white
-        shadowView.layer.shadowOpacity = 0.2
+        shadowView.layer.shadowOpacity = 0.1
         shadowView.layer.shadowColor = UI.Colors.black.cgColor
         shadowView.layer.shadowRadius = 10.0
-        shadowView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 0.5)
         shadowView.clipsToBounds = false
     }
     func layoutViews() {

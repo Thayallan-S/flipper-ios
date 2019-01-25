@@ -24,9 +24,8 @@ class StateTextField: UIView {
     private let contentView = UIView()
     
     private let titleLabel = UILabel().then {
-        $0.textColor = UI.Colors.heatherGrey
+        $0.textColor = UI.Colors.black
         $0.font = UI.Font.bold(14)
-        $0.text = "First Name"
     }
     
     private let textBox = UIView().then {
@@ -36,7 +35,7 @@ class StateTextField: UIView {
         $0.layer.borderWidth = 1.0
     }
     
-    private let textField = UITextField().then {
+    let textField = UITextField().then {
         $0.tag = 0
         $0.font = UI.Font.button
         $0.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
@@ -83,6 +82,7 @@ class StateTextField: UIView {
         
         self.tag = tag
         textField.placeholder = placeholder
+        titleLabel.text = placeholder
         
         textField.delegate = self
         
@@ -98,10 +98,10 @@ class StateTextField: UIView {
     
     func layoutViews() {
         addSubview(contentView)
-        contentView.easy.layout(Top(), Left(), Right(), Bottom(), Height(70))
+        contentView.easy.layout(Top(), Left(), Right(), Bottom(), Height(47))
         
         contentView.addSubview(titleLabel)
-        titleLabel.easy.layout(Top(), Left(), Right(), Height(10))
+        titleLabel.easy.layout(Top(), Left(), Right(), Height(12))
         
         contentView.addSubview(textBox)
         textBox.easy.layout(Top(10).to(titleLabel), Left(), Right(), Height(46), Bottom(5))
@@ -130,7 +130,7 @@ extension StateTextField: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        titleLabel.textColor = UI.Colors.heatherGrey
+        titleLabel.textColor = UI.Colors.black
         bottomLine.backgroundColor = UI.Colors.heatherGrey
         delegate?.textFieldDidEndEditing?(self)
     }
