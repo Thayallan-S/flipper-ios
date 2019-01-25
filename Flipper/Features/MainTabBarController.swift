@@ -13,7 +13,7 @@ class MainTabBarController: UITabBarController {
     let csvc1 = ComingSoonViewController()
     let csvc2 = ComingSoonViewController()
     let csvc3 = ComingSoonViewController()
-    let profileController = ProfileOnboardingViewController()
+    let profileController = ProfileFlowController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ extension MainTabBarController {
         
         selectedIndex = 1
         
-        //profileController.start()
+        profileController.start()
     }
     
     func createFirstViewController() -> UIViewController {

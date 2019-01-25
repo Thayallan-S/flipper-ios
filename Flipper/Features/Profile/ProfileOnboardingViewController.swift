@@ -9,52 +9,68 @@
 import UIKit
 import EasyPeasy
 
+protocol OnboardingViewDelegate: class {
+    func dimissOnboardingView()
+}
+
 class ProfileOnboardingViewController: UIViewController {
     
-    private let textField = StateTextField(placeholder: "Where to?")
+    weak var delegate: OnboardingViewDelegate?
     
-    private let button = BasicButton(title: "Sign Up Or Log In").then {
-        $0.pinToText()
+    private let headerLabel = UILabel().then {
+        $0.textColor = UI.Colors.grey
+        $0.font = UI.Font.regular(22)
+        $0.text = "Profile"
     }
-    private var tapGestureRecognizer: UITapGestureRecognizer!
     
-    private let navBar = TicketInfoNavBar(header: "Ticket Information", subHeader: "Click on the box and scan your tickets to verify.")
-
+    private let bodyLabel = UILabel().then {
+        $0.textColor = UI.Colors.dullGrey
+        $0.font = UI.Font.regular(18)
+        $0.text = "Sign in to view your purchased tickets, your tickets for sale and to update your account"
+        $0.textAlignment = .center
+        $0.numberOfLines = 0
+        
+    }
+    
+    private let authButton = BasicButton(title: "Sign up or Log In").then {
+        $0.pinToEdges()
+    }
+    
+    private let shadowView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UI.Colors.white
-        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
         setupProperties()
         layoutViews()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        view.removeGestureRecognizer(tapGestureRecognizer)
-    }
-    @objc private func dismissKeyboard() {
-        view.endEditing(true)
-    }
 }
 
 extension ProfileOnboardingViewController {
     func setupProperties() {
+        shadowView.backgroundColor = UI.Colors.white
+        shadowView.layer.shadowOpacity = 0.2
+        shadowView.layer.shadowColor = UI.Colors.black.cgColor
+        shadowView.layer.shadowRadius = 5.0
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        shadowView.clipsToBounds = false
         
+        authButton.buttonTapHandler = { self.delegate?.dimissOnboardingView() }
     }
     
     func layoutViews() {
-        view.addSubview(navBar)
-        navBar.easy.layout(Top(), Width(375), CenterX())
+        view.addSubview(shadowView)
+        shadowView.easy.layout(Top(), Width(375), FlipperDevice().isiPhoneX() ? Height(95) : Height(80), Left(), Right())
         
-        view.addSubview(textField)
-        textField.easy.layout(CenterX(), CenterY(), Width(300), Height(50))
+        view.addSubview(headerLabel)
+        headerLabel.easy.layout(Left(30), FlipperDevice().isiPhoneX() ? Top(56) : Top(44))
         
-        view.addSubview(button)
-        button.easy.layout(Left(80), Right(80), Top(20).to(textField))
+        view.addSubview(bodyLabel)
+        bodyLabel.easy.layout(Left(65), Right(65), Top(30).to(shadowView))
+        
+        view.addSubview(authButton)
+        authButton.easy.layout(Left(90), Right(90), Top(40).to(bodyLabel))
     }
 }
