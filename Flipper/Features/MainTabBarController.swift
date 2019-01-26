@@ -18,6 +18,8 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        profileController.profileViewController.delegate = self
+        
         setupTabBarProperties()
         setupViewControllers()
         
@@ -82,3 +84,12 @@ extension MainTabBarController {
     }
 }
 
+extension MainTabBarController: ProfileViewDelegate {
+    func didTapGetStartedPurchased() {
+        selectedIndex = 0
+    }
+    
+    func didTapGetStartedSold() {
+        selectedIndex = 1
+    }
+}
