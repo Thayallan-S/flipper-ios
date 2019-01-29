@@ -11,12 +11,13 @@ import UIKit
 class MainTabBarController: UITabBarController {
     
     let csvc1 = ComingSoonViewController()
-    let csvc2 = ComingSoonViewController()
-    let csvc3 = ComingSoonViewController()
+    let sellTicketsController = SellTicketsFlowController()
     let profileController = ProfileFlowController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileController.profileViewController.delegate = self
         
         setupTabBarProperties()
         setupViewControllers()
@@ -60,7 +61,7 @@ extension MainTabBarController {
     }
     
     func createSecondViewController() -> UIViewController {
-        var navigationVC = UINavigationController(rootViewController: csvc2).then {
+        var navigationVC = UINavigationController(rootViewController: sellTicketsController).then {
             $0.navigationBar.isHidden = true
         }
         navigationVC = setupTabBarItem(for: navigationVC, title: "SELL", imageName: "sellIcon", selectedImageName: "selectedSellIcon")
@@ -82,3 +83,12 @@ extension MainTabBarController {
     }
 }
 
+extension MainTabBarController: ProfileViewDelegate {
+    func didTapGetStartedPurchased() {
+        selectedIndex = 0
+    }
+    
+    func didTapGetStartedSold() {
+        selectedIndex = 1
+    }
+}

@@ -13,7 +13,7 @@ class ProfileFlowController: UIViewController {
     private let profileOnboardingViewController = ProfileOnboardingViewController()
     private let logInViewController = ProfileLogInViewController()
     private let signUpViewController = ProfileSignUpViewController()
-    private let profileViewController = ProfileViewController()
+    let profileViewController = ProfileViewController()
     
     init() {
         super.init(nibName: nil, bundle: nil)

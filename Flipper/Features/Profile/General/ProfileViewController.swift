@@ -10,9 +10,17 @@ import UIKit
 import EasyPeasy
 import Then
 
+protocol ProfileViewDelegate: class {
+    func didTapGetStartedPurchased()
+    func didTapGetStartedSold()
+}
 class ProfileViewController: UIViewController {
     
+    weak var delegate: ProfileViewDelegate?
+    
     private let shadowView = UIView()
+    
+    private var status: Int = 0
     
     private let headerLabel = UILabel().then {
         $0.textColor = UI.Colors.grey
@@ -89,11 +97,22 @@ extension ProfileViewController {
     
         purchasedButton.buttonTapHandler = { self.switchColoursSold() }
         soldButton.buttonTapHandler = { self.switchColoursPurchased() }
-        getStartedButton.buttonTapHandler = { }
+        getStartedButton.buttonTapHandler = { self.goTo() }
         
     }
     
+    func goTo() {
+        print("\(status)")
+        if status == 0 {
+            delegate?.didTapGetStartedPurchased()
+        }
+        else {
+            delegate?.didTapGetStartedSold()
+        }
+    }
+    
     func switchColoursPurchased() {
+        status = 1
         view.addSubview(purchasedButton)
         view.addSubview(soldButton)
         purchasedButton.colorScheme = .blueOnWhite
@@ -105,6 +124,7 @@ extension ProfileViewController {
     }
     
     func switchColoursSold() {
+        status = 0
         view.addSubview(soldButton)
         view.addSubview(purchasedButton)
         purchasedButton.colorScheme = .whiteOnBlue
