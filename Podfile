@@ -11,5 +11,8 @@ target 'Flipper' do
   pod 'lottie-ios'
   pod 'Then'
   pod 'Firebase/Core'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 
 end

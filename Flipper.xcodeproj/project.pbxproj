@@ -31,6 +31,8 @@
 		534E30C221F939B10084FF31 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C121F939B10084FF31 /* BasicButton.swift */; };
 		534E30C421F9407A0084FF31 /* StateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C321F9407A0084FF31 /* StateTextField.swift */; };
 		534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C621F94C210084FF31 /* GeneralNavBar.swift */; };
+		5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */; };
+		5351D88B21FC06D900EAAD20 /* SellTicketsViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */; };
 		539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */; };
 		539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */; };
 		539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */; };
@@ -69,6 +71,8 @@
 		534E30C121F939B10084FF31 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		534E30C321F9407A0084FF31 /* StateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTextField.swift; sourceTree = "<group>"; };
 		534E30C621F94C210084FF31 /* GeneralNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavBar.swift; sourceTree = "<group>"; };
+		5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTicketsFlowController.swift; sourceTree = "<group>"; };
+		5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellTicketsViewController .swift"; sourceTree = "<group>"; };
 		539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxNavBar.swift; sourceTree = "<group>"; };
 		539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterNavBar.swift; sourceTree = "<group>"; };
 		539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoNavBar.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				534E309221F8F9CC0084FF31 /* ComingSoonViewController.swift */,
 				534E309A21F8FB070084FF31 /* MainTabBarController.swift */,
 				534E30B121F9114B0084FF31 /* Profile */,
+				5351D88621FC04E700EAAD20 /* SellTickets */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -243,6 +248,23 @@
 			path = NavBars;
 			sourceTree = "<group>";
 		};
+		5351D88621FC04E700EAAD20 /* SellTickets */ = {
+			isa = PBXGroup;
+			children = (
+				5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */,
+				5351D88921FC06C800EAAD20 /* General */,
+			);
+			path = SellTickets;
+			sourceTree = "<group>";
+		};
+		5351D88921FC06C800EAAD20 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		53FDB44C21FB9A57001E09D8 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +304,7 @@
 				534E307821F8F6250084FF31 /* Frameworks */,
 				534E307921F8F6250084FF31 /* Resources */,
 				E03AC030E9DB112C2BA8FF0E /* [CP] Embed Pods Frameworks */,
+				866611BF02587FFD79C242F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,6 +384,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		866611BF02587FFD79C242F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E03AC030E9DB112C2BA8FF0E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,9 +455,11 @@
 				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,
 				539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */,
+				5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */,
 				539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */,
 				534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */,
 				534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */,
+				5351D88B21FC06D900EAAD20 /* SellTicketsViewController .swift in Sources */,
 				534E30B821F912F70084FF31 /* UIButton+SetBackgroundColor.swift in Sources */,
 				534E30B021F908D60084FF31 /* SplashViewController.swift in Sources */,
 				534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */,
