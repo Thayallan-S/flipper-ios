@@ -101,7 +101,7 @@ class StateTextField: UIView {
         contentView.easy.layout(Top(), Left(), Right(), Bottom(), Height(47))
         
         contentView.addSubview(titleLabel)
-        titleLabel.easy.layout(Top(), Left(), Right(), Height(12))
+        titleLabel.easy.layout(Top(), Left(), Right(), Height(14))
         
         contentView.addSubview(textBox)
         textBox.easy.layout(Top(10).to(titleLabel), Left(), Right(), Height(46), Bottom(5))

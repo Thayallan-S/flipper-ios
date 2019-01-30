@@ -11,27 +11,71 @@ import EasyPeasy
 import Then
 import GooglePlaces
 
-class SellTicketsViewController: UIViewController {
+protocol SellTicketsViewDelegate: class {
+    func dimissInitialView()
+}
+
+class SellTicketsViewController: UIViewController, CLLocationManagerDelegate {
+    
+    weak var delegate: SellTicketsViewDelegate?
+    
+    private var fetcher: GMSAutocompleteFetcher?
+    
+    private let locationManager = CLLocationManager()
     
     private let navBar = TextBoxNavBar(header: "Sell Tickets")
     
+    private let nextButton = BorderedButton(title: "Next").then {
+        $0.pinToEdges()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.backgroundColor = UI.Colors.white
+        
+        let filter = GMSAutocompleteFilter()
+        filter.type = .city
+        
+        fetcher = GMSAutocompleteFetcher(bounds: nil, filter: filter)
+        fetcher?.delegate = self
+        navBar.wherefromTextField.delegate = self
         
         setupProperties()
         layoutViews()
     }
 }
 
-extension SellTicketsViewController {
-    func setupProperties() {
+extension SellTicketsViewController: TextFieldDelegate {
+    func textFieldDidChange(_ textField: TextField) {
+        fetcher?.sourceTextHasChanged(textField.text)
+
+    }
+}
+
+extension SellTicketsViewController: GMSAutocompleteFetcherDelegate {
+    func didFailAutocompleteWithError(_ error: Error) {
         
     }
     
+    func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
+        let resultStr = NSMutableString()
+        for prediction in predictions {
+            
+        }
+    }
+}
+
+extension SellTicketsViewController {
+    func setupProperties() {
+        self.hideKeyboardWhenTappedAround()
+        nextButton.buttonTapHandler = { self.delegate?.dimissInitialView() }
+    }
     func layoutViews() {
         view.addSubview(navBar)
         navBar.easy.layout(Width(375), Height(180))
+        
+        view.addSubview(nextButton)
+        nextButton.easy.layout(FlipperDevice().isiPhoneX() ? Bottom(95) : Bottom(70), Left(20), Right(20))
     }
 }

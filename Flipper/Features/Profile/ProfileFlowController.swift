@@ -74,7 +74,8 @@ extension ProfileFlowController: GeneralNavBarDelegate {
 
 extension ProfileFlowController: ProfileLogInViewDelegate {
     func didTapLogin() {
-        
+        remove(childController: logInViewController)
+        add(childController: profileViewController)
     }
     
     func didTapSignUp() {

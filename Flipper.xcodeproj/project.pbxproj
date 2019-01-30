@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53030F3D2200EEF200EF2B94 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F3C2200EEF200EF2B94 /* LocationView.swift */; };
+		53030F3F220103DD00EF2B94 /* SellTicketsAirlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */; };
+		53030F4122011E9500EF2B94 /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */; };
+		53030F432201298600EF2B94 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F422201298600EF2B94 /* TicketInformationViewController.swift */; };
+		53030F45220157A600EF2B94 /* FlightClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F44220157A600EF2B94 /* FlightClassView.swift */; };
 		534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E307E21F8F6250084FF31 /* AppDelegate.swift */; };
 		534E308621F8F6280084FF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534E308521F8F6280084FF31 /* Assets.xcassets */; };
 		534E308921F8F6280084FF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534E308721F8F6280084FF31 /* LaunchScreen.storyboard */; };
@@ -45,6 +50,11 @@
 
 /* Begin PBXFileReference section */
 		499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		53030F3C2200EEF200EF2B94 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTicketsAirlineViewController.swift; sourceTree = "<group>"; };
+		53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
+		53030F422201298600EF2B94 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
+		53030F44220157A600EF2B94 /* FlightClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightClassView.swift; sourceTree = "<group>"; };
 		534E307B21F8F6250084FF31 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534E307E21F8F6250084FF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534E308521F8F6280084FF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +112,15 @@
 				840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53030F3B2200EEC900EF2B94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53030F3C2200EEF200EF2B94 /* LocationView.swift */,
+				53030F44220157A600EF2B94 /* FlightClassView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		534E307221F8F6250084FF31 = {
@@ -260,7 +279,11 @@
 		5351D88921FC06C800EAAD20 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				53030F3B2200EEC900EF2B94 /* Views */,
 				5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */,
+				53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */,
+				53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */,
+				53030F422201298600EF2B94 /* TicketInformationViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -456,6 +479,8 @@
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,
 				539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */,
 				5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */,
+				53030F45220157A600EF2B94 /* FlightClassView.swift in Sources */,
+				53030F4122011E9500EF2B94 /* BookingDetailsViewController.swift in Sources */,
 				539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */,
 				534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */,
 				534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */,
@@ -467,9 +492,12 @@
 				534E30C221F939B10084FF31 /* BasicButton.swift in Sources */,
 				539CC3C221FAA4E20033A4B3 /* ProfileSignUpViewController.swift in Sources */,
 				534E30BD21F9283D0084FF31 /* ProfileOnboardingViewController.swift in Sources */,
+				53030F432201298600EF2B94 /* TicketInformationViewController.swift in Sources */,
 				534E30AC21F901630084FF31 /* UIViewController+AddRemoveChildren.swift in Sources */,
+				53030F3F220103DD00EF2B94 /* SellTicketsAirlineViewController.swift in Sources */,
 				534E309B21F8FB070084FF31 /* MainTabBarController.swift in Sources */,
 				534E309E21F8FBBE0084FF31 /* UI.swift in Sources */,
+				53030F3D2200EEF200EF2B94 /* LocationView.swift in Sources */,
 				534E309521F8F9F70084FF31 /* AppFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
