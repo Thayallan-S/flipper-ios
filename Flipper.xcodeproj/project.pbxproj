@@ -38,6 +38,7 @@
 		534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C621F94C210084FF31 /* GeneralNavBar.swift */; };
 		5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */; };
 		5351D88B21FC06D900EAAD20 /* SellTicketsViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */; };
+		5376676A22022ADC0049974C /* AmenitiesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5376676922022ADC0049974C /* AmenitiesCardView.swift */; };
 		539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */; };
 		539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */; };
 		539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */; };
@@ -83,6 +84,7 @@
 		534E30C621F94C210084FF31 /* GeneralNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavBar.swift; sourceTree = "<group>"; };
 		5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTicketsFlowController.swift; sourceTree = "<group>"; };
 		5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellTicketsViewController .swift"; sourceTree = "<group>"; };
+		5376676922022ADC0049974C /* AmenitiesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesCardView.swift; sourceTree = "<group>"; };
 		539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxNavBar.swift; sourceTree = "<group>"; };
 		539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterNavBar.swift; sourceTree = "<group>"; };
 		539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoNavBar.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				53030F3C2200EEF200EF2B94 /* LocationView.swift */,
 				53030F44220157A600EF2B94 /* FlightClassView.swift */,
+				5376676922022ADC0049974C /* AmenitiesCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				534E30C421F9407A0084FF31 /* StateTextField.swift in Sources */,
 				534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */,
 				539CC3C021FA8EF80033A4B3 /* UIViewController+HideKeyboard.swift in Sources */,
+				5376676A22022ADC0049974C /* AmenitiesCardView.swift in Sources */,
 				53FDB44F21FB9AB3001E09D8 /* ProfileViewController.swift in Sources */,
 				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,

@@ -10,15 +10,21 @@ import UIKit
 import EasyPeasy
 import Then
 
+protocol FlightClassViewDelegate: class {
+    func didChangeColor(button: String)
+}
+
 class FlightClassView: UIView {
+    
+    weak var delegate: FlightClassViewDelegate?
     
     private let contentView = UIView()
     
-    private var economyButton = BorderedButton(title: "Economy", colorScheme: .blueOnWhite , style: .normal)
+    var economyButton = BorderedButton(title: "Economy", colorScheme: .blueOnWhite , style: .normal)
     
-    private var businessButton = BorderedButton(title: "Business", colorScheme: .blueOnWhite , style: .normal)
+    var businessButton = BorderedButton(title: "Business", colorScheme: .blueOnWhite , style: .normal)
     
-    private var firstClassButton = BorderedButton(title: "First Class", colorScheme: .blueOnWhite , style: .normal)
+    var firstClassButton = BorderedButton(title: "First Class", colorScheme: .blueOnWhite , style: .normal)
 
     init() {
         super.init(frame: .zero)
@@ -36,56 +42,10 @@ class FlightClassView: UIView {
 
 extension FlightClassView {
     func setupProperties() {
-        economyButton.buttonTapHandler = { self.changeColorEconomy() }
-        businessButton.buttonTapHandler = { self.changeColorBusiness() }
-        firstClassButton.buttonTapHandler = { self.changeColorFirstClass() }
+        economyButton.buttonTapHandler = { self.delegate?.didChangeColor(button: "Economy") }
+        businessButton.buttonTapHandler = { self.delegate?.didChangeColor(button: "Business") }
+        firstClassButton.buttonTapHandler = { self.delegate?.didChangeColor(button: "First Class") }
         
-    }
-    
-    func changeColorEconomy() {
-        if self.economyButton.colorScheme == .blueOnWhite {
-            self.economyButton.colorScheme = .whiteOnBlue
-            self.businessButton.colorScheme = .blueOnWhite
-            self.firstClassButton.colorScheme = .blueOnWhite
-            self.economyButton.setupColorScheme()
-        }
-        else if self.economyButton.colorScheme == .whiteOnBlue {
-            self.economyButton.colorScheme = .blueOnWhite
-            self.businessButton.colorScheme = .whiteOnBlue
-            self.firstClassButton.colorScheme = .whiteOnBlue
-            self.economyButton.setupColorScheme()
-        }
-        
-    }
-    
-    func changeColorBusiness() {
-        if self.businessButton.colorScheme == .blueOnWhite {
-            self.economyButton.colorScheme = .blueOnWhite
-            self.businessButton.colorScheme = .whiteOnBlue
-            self.firstClassButton.colorScheme = .blueOnWhite
-            self.businessButton.setupColorScheme()
-        }
-        else if self.businessButton.colorScheme == .whiteOnBlue {
-            self.economyButton.colorScheme = .whiteOnBlue
-            self.businessButton.colorScheme = .blueOnWhite
-            self.firstClassButton.colorScheme = .whiteOnBlue
-            self.businessButton.setupColorScheme()
-        }
-    }
-    
-    func changeColorFirstClass() {
-        if self.firstClassButton.colorScheme == .blueOnWhite {
-            self.economyButton.colorScheme = .blueOnWhite
-            self.businessButton.colorScheme = .blueOnWhite
-            self.firstClassButton.colorScheme = .whiteOnBlue
-            self.firstClassButton.setupColorScheme()
-        }
-        else if self.firstClassButton.colorScheme == .whiteOnBlue {
-            self.economyButton.colorScheme = .whiteOnBlue
-            self.businessButton.colorScheme = .whiteOnBlue
-            self.firstClassButton.colorScheme = .blueOnWhite
-            self.firstClassButton.setupColorScheme()
-        }
     }
     
     func layoutViews() {
