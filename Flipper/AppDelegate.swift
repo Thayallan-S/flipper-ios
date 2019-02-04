@@ -8,14 +8,19 @@
 
 import UIKit
 import Firebase
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let googleAPIKey = "AIzaSyCsCFWnxttodgSY2CE0dgXedRgbuKhzfpM"
     
     var window: UIWindow?
     var appFlowController: AppFlowController!
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        GMSPlacesClient.provideAPIKey(googleAPIKey)
         
         appFlowController = AppFlowController()
         

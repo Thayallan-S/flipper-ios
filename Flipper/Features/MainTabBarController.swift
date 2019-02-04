@@ -10,8 +10,8 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
-    let csvc1 = ComingSoonViewController()
-    let sellTicketsController = SellTicketsFlowController()
+    let purchaseFlowController = PurchaseTicketsFlowController()
+    let sellFlowController = SellFlowController()
     let profileController = ProfileFlowController()
     
     override func viewDidLoad() {
@@ -53,7 +53,7 @@ extension MainTabBarController {
     }
     
     func createFirstViewController() -> UIViewController {
-        var navigationVC = UINavigationController(rootViewController: csvc1).then {
+        var navigationVC = UINavigationController(rootViewController: purchaseFlowController).then {
             $0.navigationBar.isHidden = true
         }
         navigationVC = setupTabBarItem(for: navigationVC, title: "EXPLORE", imageName: "exploreIcon", selectedImageName: "selectedExploreIcon")
@@ -61,7 +61,7 @@ extension MainTabBarController {
     }
     
     func createSecondViewController() -> UIViewController {
-        var navigationVC = UINavigationController(rootViewController: sellTicketsController).then {
+        var navigationVC = UINavigationController(rootViewController: sellFlowController).then {
             $0.navigationBar.isHidden = true
         }
         navigationVC = setupTabBarItem(for: navigationVC, title: "SELL", imageName: "sellIcon", selectedImageName: "selectedSellIcon")

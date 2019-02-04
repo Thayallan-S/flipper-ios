@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53030F3D2200EEF200EF2B94 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F3C2200EEF200EF2B94 /* LocationView.swift */; };
+		53030F3F220103DD00EF2B94 /* SellTicketsAirlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */; };
+		53030F4122011E9500EF2B94 /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */; };
+		53030F432201298600EF2B94 /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F422201298600EF2B94 /* TicketInformationViewController.swift */; };
+		53030F45220157A600EF2B94 /* FlightClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53030F44220157A600EF2B94 /* FlightClassView.swift */; };
 		534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E307E21F8F6250084FF31 /* AppDelegate.swift */; };
 		534E308621F8F6280084FF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534E308521F8F6280084FF31 /* Assets.xcassets */; };
 		534E308921F8F6280084FF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534E308721F8F6280084FF31 /* LaunchScreen.storyboard */; };
@@ -33,6 +38,17 @@
 		534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E30C621F94C210084FF31 /* GeneralNavBar.swift */; };
 		5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */; };
 		5351D88B21FC06D900EAAD20 /* SellTicketsViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */; };
+		5356AEDF2204B001001EBC77 /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356AEDE2204B001001EBC77 /* PaymentMethodViewController.swift */; };
+		5356AEE12204C0CF001EBC77 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356AEE02204C0CF001EBC77 /* ReviewViewController.swift */; };
+		5356AEE42204CBE6001EBC77 /* SellFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356AEE32204CBE6001EBC77 /* SellFlowController.swift */; };
+		5356AEE82204CC0D001EBC77 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356AEE72204CC0D001EBC77 /* ConfirmationViewController.swift */; };
+		5356AEEC2204CC2C001EBC77 /* ConfirmationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356AEEB2204CC2C001EBC77 /* ConfirmationFlowController.swift */; };
+		536301402204F80D00C3F1AC /* PurchaseTicketsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5363013F2204F80D00C3F1AC /* PurchaseTicketsFlowController.swift */; };
+		536301452204F8D200C3F1AC /* PurchaseTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536301442204F8D200C3F1AC /* PurchaseTicketsViewController.swift */; };
+		536301472204FCF300C3F1AC /* SearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536301462204FCF300C3F1AC /* SearchesViewController.swift */; };
+		5363014A2204FF6B00C3F1AC /* ListingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536301492204FF6B00C3F1AC /* ListingCardView.swift */; };
+		5376676A22022ADC0049974C /* AmenitiesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5376676922022ADC0049974C /* AmenitiesCardView.swift */; };
+		5376676C220250CC0049974C /* ListPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5376676B220250CC0049974C /* ListPriceViewController.swift */; };
 		539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */; };
 		539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */; };
 		539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */; };
@@ -45,6 +61,11 @@
 
 /* Begin PBXFileReference section */
 		499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		53030F3C2200EEF200EF2B94 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTicketsAirlineViewController.swift; sourceTree = "<group>"; };
+		53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
+		53030F422201298600EF2B94 /* TicketInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
+		53030F44220157A600EF2B94 /* FlightClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightClassView.swift; sourceTree = "<group>"; };
 		534E307B21F8F6250084FF31 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534E307E21F8F6250084FF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534E308521F8F6280084FF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +94,17 @@
 		534E30C621F94C210084FF31 /* GeneralNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavBar.swift; sourceTree = "<group>"; };
 		5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTicketsFlowController.swift; sourceTree = "<group>"; };
 		5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellTicketsViewController .swift"; sourceTree = "<group>"; };
+		5356AEDE2204B001001EBC77 /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		5356AEE02204C0CF001EBC77 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		5356AEE32204CBE6001EBC77 /* SellFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellFlowController.swift; sourceTree = "<group>"; };
+		5356AEE72204CC0D001EBC77 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		5356AEEB2204CC2C001EBC77 /* ConfirmationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationFlowController.swift; sourceTree = "<group>"; };
+		5363013F2204F80D00C3F1AC /* PurchaseTicketsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTicketsFlowController.swift; sourceTree = "<group>"; };
+		536301442204F8D200C3F1AC /* PurchaseTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTicketsViewController.swift; sourceTree = "<group>"; };
+		536301462204FCF300C3F1AC /* SearchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchesViewController.swift; sourceTree = "<group>"; };
+		536301492204FF6B00C3F1AC /* ListingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCardView.swift; sourceTree = "<group>"; };
+		5376676922022ADC0049974C /* AmenitiesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesCardView.swift; sourceTree = "<group>"; };
+		5376676B220250CC0049974C /* ListPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPriceViewController.swift; sourceTree = "<group>"; };
 		539CC3B721FA5D110033A4B3 /* TextBoxNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxNavBar.swift; sourceTree = "<group>"; };
 		539CC3B921FA6B740033A4B3 /* FilterNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterNavBar.swift; sourceTree = "<group>"; };
 		539CC3BB21FA71AC0033A4B3 /* TicketInfoNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoNavBar.swift; sourceTree = "<group>"; };
@@ -102,6 +134,16 @@
 				840232C17AAA9C51A3126B3C /* Pods_Flipper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53030F3B2200EEC900EF2B94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53030F3C2200EEF200EF2B94 /* LocationView.swift */,
+				53030F44220157A600EF2B94 /* FlightClassView.swift */,
+				5376676922022ADC0049974C /* AmenitiesCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		534E307221F8F6250084FF31 = {
@@ -146,6 +188,7 @@
 				534E309A21F8FB070084FF31 /* MainTabBarController.swift */,
 				534E30B121F9114B0084FF31 /* Profile */,
 				5351D88621FC04E700EAAD20 /* SellTickets */,
+				5363013E2204F7E600C3F1AC /* PurchaseTickets */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -251,8 +294,11 @@
 		5351D88621FC04E700EAAD20 /* SellTickets */ = {
 			isa = PBXGroup;
 			children = (
+				5356AEE32204CBE6001EBC77 /* SellFlowController.swift */,
 				5351D88721FC050400EAAD20 /* SellTicketsFlowController.swift */,
+				5356AEEB2204CC2C001EBC77 /* ConfirmationFlowController.swift */,
 				5351D88921FC06C800EAAD20 /* General */,
+				5356AEE22204CBA8001EBC77 /* Confirmation */,
 			);
 			path = SellTickets;
 			sourceTree = "<group>";
@@ -260,9 +306,51 @@
 		5351D88921FC06C800EAAD20 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				53030F3B2200EEC900EF2B94 /* Views */,
 				5351D88A21FC06D900EAAD20 /* SellTicketsViewController .swift */,
+				53030F3E220103DD00EF2B94 /* SellTicketsAirlineViewController.swift */,
+				53030F4022011E9500EF2B94 /* BookingDetailsViewController.swift */,
+				53030F422201298600EF2B94 /* TicketInformationViewController.swift */,
+				5376676B220250CC0049974C /* ListPriceViewController.swift */,
+				5356AEDE2204B001001EBC77 /* PaymentMethodViewController.swift */,
+				5356AEE02204C0CF001EBC77 /* ReviewViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		5356AEE22204CBA8001EBC77 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				5356AEE72204CC0D001EBC77 /* ConfirmationViewController.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		5363013E2204F7E600C3F1AC /* PurchaseTickets */ = {
+			isa = PBXGroup;
+			children = (
+				5363013F2204F80D00C3F1AC /* PurchaseTicketsFlowController.swift */,
+				536301412204F8B200C3F1AC /* General */,
+			);
+			path = PurchaseTickets;
+			sourceTree = "<group>";
+		};
+		536301412204F8B200C3F1AC /* General */ = {
+			isa = PBXGroup;
+			children = (
+				536301482204FF3000C3F1AC /* Views */,
+				536301442204F8D200C3F1AC /* PurchaseTicketsViewController.swift */,
+				536301462204FCF300C3F1AC /* SearchesViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		536301482204FF3000C3F1AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				536301492204FF6B00C3F1AC /* ListingCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		53FDB44C21FB9A57001E09D8 /* AuthFlow */ = {
@@ -419,8 +507,10 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -428,8 +518,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -447,30 +539,46 @@
 			files = (
 				539CC3B821FA5D110033A4B3 /* TextBoxNavBar.swift in Sources */,
 				539CC3BE21FA811A0033A4B3 /* ProfileLogInViewController.swift in Sources */,
+				5356AEE12204C0CF001EBC77 /* ReviewViewController.swift in Sources */,
 				534E30AE21F902130084FF31 /* FlipperDevice.swift in Sources */,
 				534E30C421F9407A0084FF31 /* StateTextField.swift in Sources */,
+				536301472204FCF300C3F1AC /* SearchesViewController.swift in Sources */,
+				5356AEDF2204B001001EBC77 /* PaymentMethodViewController.swift in Sources */,
 				534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */,
 				539CC3C021FA8EF80033A4B3 /* UIViewController+HideKeyboard.swift in Sources */,
+				5376676A22022ADC0049974C /* AmenitiesCardView.swift in Sources */,
 				53FDB44F21FB9AB3001E09D8 /* ProfileViewController.swift in Sources */,
 				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,
 				539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */,
 				5351D88821FC050400EAAD20 /* SellTicketsFlowController.swift in Sources */,
+				53030F45220157A600EF2B94 /* FlightClassView.swift in Sources */,
+				53030F4122011E9500EF2B94 /* BookingDetailsViewController.swift in Sources */,
 				539CC3BC21FA71AC0033A4B3 /* TicketInfoNavBar.swift in Sources */,
+				5356AEE82204CC0D001EBC77 /* ConfirmationViewController.swift in Sources */,
+				536301402204F80D00C3F1AC /* PurchaseTicketsFlowController.swift in Sources */,
 				534E30AA21F901190084FF31 /* UIColor+HexValue.swift in Sources */,
 				534E30B321F911620084FF31 /* ProfileFlowController.swift in Sources */,
 				5351D88B21FC06D900EAAD20 /* SellTicketsViewController .swift in Sources */,
 				534E30B821F912F70084FF31 /* UIButton+SetBackgroundColor.swift in Sources */,
+				5376676C220250CC0049974C /* ListPriceViewController.swift in Sources */,
 				534E30B021F908D60084FF31 /* SplashViewController.swift in Sources */,
+				5356AEEC2204CC2C001EBC77 /* ConfirmationFlowController.swift in Sources */,
 				534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */,
 				534E30B621F912550084FF31 /* BorderedButton.swift in Sources */,
 				534E30C221F939B10084FF31 /* BasicButton.swift in Sources */,
 				539CC3C221FAA4E20033A4B3 /* ProfileSignUpViewController.swift in Sources */,
 				534E30BD21F9283D0084FF31 /* ProfileOnboardingViewController.swift in Sources */,
+				53030F432201298600EF2B94 /* TicketInformationViewController.swift in Sources */,
 				534E30AC21F901630084FF31 /* UIViewController+AddRemoveChildren.swift in Sources */,
+				53030F3F220103DD00EF2B94 /* SellTicketsAirlineViewController.swift in Sources */,
 				534E309B21F8FB070084FF31 /* MainTabBarController.swift in Sources */,
 				534E309E21F8FBBE0084FF31 /* UI.swift in Sources */,
+				5363014A2204FF6B00C3F1AC /* ListingCardView.swift in Sources */,
+				53030F3D2200EEF200EF2B94 /* LocationView.swift in Sources */,
 				534E309521F8F9F70084FF31 /* AppFlowController.swift in Sources */,
+				5356AEE42204CBE6001EBC77 /* SellFlowController.swift in Sources */,
+				536301452204F8D200C3F1AC /* PurchaseTicketsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

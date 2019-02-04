@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class ProfileFlowController: UIViewController {
     
@@ -74,7 +77,8 @@ extension ProfileFlowController: GeneralNavBarDelegate {
 
 extension ProfileFlowController: ProfileLogInViewDelegate {
     func didTapLogin() {
-        
+        logInViewController.login(withEmail: logInViewController.emailField.textField.text!, password: logInViewController.passwordField.textField.text!)
+        print("\(Auth.auth().currentUser?.email)")
     }
     
     func didTapSignUp() {
@@ -85,7 +89,8 @@ extension ProfileFlowController: ProfileLogInViewDelegate {
 
 extension ProfileFlowController: ProfileSignUpViewDelegate {
     func didSignUp() {
-        remove(childController: signUpViewController)
-        add(childController: profileViewController)
+        print("\(signUpViewController.emailField.textField.text!)")
+        print("\(signUpViewController.passwordField.textField.text!)")
+        signUpViewController.createUser(email: signUpViewController.emailField.textField.text! , password: signUpViewController.passwordField.textField.text!)
     }
 }

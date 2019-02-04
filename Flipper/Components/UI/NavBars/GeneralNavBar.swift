@@ -20,7 +20,7 @@ class GeneralNavBar: UIView {
 
     private let contentView = UIView()
     
-    private let headerLabel = UILabel().then {
+    let headerLabel = UILabel().then {
         $0.textColor = UI.Colors.grey
         $0.font = UI.Font.regular(22)
     }

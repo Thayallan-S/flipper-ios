@@ -10,6 +10,11 @@ import UIKit
 import EasyPeasy
 import Then
 
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
+
+
 protocol ProfileSignUpViewDelegate: class {
     func didSignUp()
 }
@@ -24,10 +29,10 @@ class ProfileSignUpViewController: UIViewController {
     
     private let firstNameField = StateTextField(placeholder: "First Name")
     private let lastNameField = StateTextField(placeholder: "Last Name")
-    private let emailField = StateTextField(placeholder: "Email").then {
+    let emailField = StateTextField(placeholder: "Email").then {
         $0.textField.keyboardType = .emailAddress
     }
-    private let passwordField = StateTextField(placeholder: "Password").then {
+    let passwordField = StateTextField(placeholder: "Password").then {
         $0.textField.isSecureTextEntry = true
     }
     
@@ -80,4 +85,18 @@ extension ProfileSignUpViewController: StateTextFieldDelegate {
         textField.endEditing(true)
         return false
     }
+}
+
+extension ProfileSignUpViewController {
+    func createUser(email: String, password: String, _ callback: ((Error?) -> ())? = nil){
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if let e = error{
+                callback?(e)
+                return
+            }
+            callback?(nil)
+        }
+    }
+    
+    func 
 }

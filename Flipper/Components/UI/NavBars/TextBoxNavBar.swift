@@ -18,8 +18,8 @@ class TextBoxNavBar: UIView {
         $0.textColor = UI.Colors.grey
         $0.font = UI.Font.regular(22)
     }
-    private let wherefromTextField = TextField(placeholder: "Where from?")
-    private let whereToTextField = TextField(placeholder: "Where to?")
+    let wherefromTextField = TextField(placeholder: "Where from?")
+    let whereToTextField = TextField(placeholder: "Where to?")
     
     private let shadowView = UIView()
    
