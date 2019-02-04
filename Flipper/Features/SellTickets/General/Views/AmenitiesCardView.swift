@@ -10,7 +10,13 @@ import UIKit
 import EasyPeasy
 import Then
 
+protocol AmenitiesCardViewDelegate: class  {
+    func didTapCard(title: String)
+}
+
 class AmenitiesCardView: UIView {
+    
+    weak var delegate: AmenitiesCardViewDelegate?
     
     var state: Bool = false
     
@@ -54,22 +60,20 @@ class AmenitiesCardView: UIView {
 
 extension AmenitiesCardView {
     @objc func handleButtonTap() {
-        inverseColours()
+        delegate?.didTapCard(title: iconLabel.text!)
     }
     func inverseColours() {
         if state {
-            contentView.backgroundColor = UI.Colors.white
-            contentView.layer.borderColor = UI.Colors.dullGrey.cgColor
-            iconLabel.textColor = UI.Colors.black
-            iconView.image = UIImage(named: unTappedIcon)
-            state = false
-        }
-        else {
             contentView.backgroundColor = UI.Colors.swishBlue
             contentView.layer.borderColor = UI.Colors.swishBlue.cgColor
             iconLabel.textColor = UI.Colors.white
             iconView.image = UIImage(named: tappedIcon)
-            state = true
+        }
+        else {
+            contentView.backgroundColor = UI.Colors.white
+            contentView.layer.borderColor = UI.Colors.dullGrey.cgColor
+            iconLabel.textColor = UI.Colors.black
+            iconView.image = UIImage(named: unTappedIcon)
         }
     }
     func setupProperties() {

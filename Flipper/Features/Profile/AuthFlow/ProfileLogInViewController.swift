@@ -10,12 +10,18 @@ import UIKit
 import EasyPeasy
 import Then
 
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
+
 protocol ProfileLogInViewDelegate: class {
     func didTapLogin()
     func didTapSignUp()
 }
 
 class ProfileLogInViewController: UIViewController {
+    
+    var isLoggedIn: Bool = false
     
     weak var delegate: ProfileLogInViewDelegate?
     
@@ -31,11 +37,11 @@ class ProfileLogInViewController: UIViewController {
         $0.textAlignment = .center
     }
     
-    private let emailField = StateTextField(placeholder: "Email").then {
+    let emailField = StateTextField(placeholder: "Email").then {
         $0.textField.keyboardType = .emailAddress
     }
     
-    private let passwordField = StateTextField(placeholder: "Password").then {
+    let passwordField = StateTextField(placeholder: "Password").then {
         $0.textField.keyboardType = .default
         $0.textField.isSecureTextEntry = true
     }
@@ -102,5 +108,17 @@ extension ProfileLogInViewController: StateTextFieldDelegate {
     func textFieldShouldReturn(_ textField: StateTextField) -> Bool {
         textField.endEditing(true)
         return false
+    }
+}
+
+extension ProfileLogInViewController {
+    func login(withEmail email: String, password: String, _ callback: ((Error?) -> ())? = nil){
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let e = error{
+                callback?(e)
+                return
+            }
+            callback?(nil)
+        }
     }
 }

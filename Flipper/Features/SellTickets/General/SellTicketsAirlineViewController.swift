@@ -25,17 +25,27 @@ class SellTicketsAirlineViewController: UIViewController {
     private let nextButton = BorderedButton(title: "Next").then {
         $0.pinToEdges()
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UI.Colors.white
+    init() {
+        super.init(nibName: nil, bundle: nil)
         
         self.hideKeyboardWhenTappedAround()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextAirline() }
         
+        
+        start()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func start() {
+        view.backgroundColor = UI.Colors.white
+        
+        
         layoutViews()
     }
+    
 }
 
 extension SellTicketsAirlineViewController {

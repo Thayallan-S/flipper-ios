@@ -10,7 +10,13 @@ import UIKit
 import EasyPeasy
 import Then
 
+protocol TicketInformationViewDelegate: class {
+    func didTapNextTicketInfo()
+}
+
 class TicketInformationViewController: UIViewController {
+    
+    weak var delegate: TicketInformationViewDelegate?
     
     let navBar = GeneralNavBar(header: "Ticket Information", subHeader: "Enter the information for the ticket purchased")
     
@@ -55,7 +61,7 @@ class TicketInformationViewController: UIViewController {
         flightClassView.delegate = self
         
         self.hideKeyboardWhenTappedAround()
-        nextButton.buttonTapHandler = {  }
+        nextButton.buttonTapHandler = { self.delegate?.didTapNextTicketInfo() }
         
         layoutViews()
     }

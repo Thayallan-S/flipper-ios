@@ -29,11 +29,10 @@ class SellTicketsViewController: UIViewController, CLLocationManagerDelegate {
         $0.pinToEdges()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = UI.Colors.white
+    init() {
+        super.init(nibName: nil, bundle: nil)
         
+        view.backgroundColor = UI.Colors.white
         let filter = GMSAutocompleteFilter()
         filter.type = .city
         
@@ -41,6 +40,15 @@ class SellTicketsViewController: UIViewController, CLLocationManagerDelegate {
         fetcher?.delegate = self
         navBar.wherefromTextField.delegate = self
         
+        start()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func start() {
         setupProperties()
         layoutViews()
     }
