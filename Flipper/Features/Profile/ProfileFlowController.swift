@@ -91,6 +91,5 @@ extension ProfileFlowController: ProfileSignUpViewDelegate {
     func didSignUp() {
         print("\(signUpViewController.emailField.textField.text!)")
         print("\(signUpViewController.passwordField.textField.text!)")
-        signUpViewController.createUser(email: signUpViewController.emailField.textField.text! , password: signUpViewController.passwordField.textField.text!)
     }
 }
