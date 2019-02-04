@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533D15C82207C08700A998D7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D15C72207C08700A998D7 /* API.swift */; };
 		534E307F21F8F6250084FF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E307E21F8F6250084FF31 /* AppDelegate.swift */; };
 		534E308621F8F6280084FF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534E308521F8F6280084FF31 /* Assets.xcassets */; };
 		534E308921F8F6280084FF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534E308721F8F6280084FF31 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		499AB608BE9442A6704151E3 /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		533D15C72207C08700A998D7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		534E307B21F8F6250084FF31 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534E307E21F8F6250084FF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534E308521F8F6280084FF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		533D15C42207C06600A998D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				533D15C72207C08700A998D7 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		534E307221F8F6250084FF31 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 				534E308721F8F6280084FF31 /* LaunchScreen.storyboard */,
 				534E307E21F8F6250084FF31 /* AppDelegate.swift */,
 				534E309421F8F9F70084FF31 /* AppFlowController.swift */,
+				533D15C42207C06600A998D7 /* API */,
 				534E309621F8FA2C0084FF31 /* Features */,
 				534E309721F8FA360084FF31 /* Extensions */,
 				534E309821F8FA410084FF31 /* Components */,
@@ -393,6 +404,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -401,6 +413,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
@@ -417,19 +430,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flipper/Pods-Flipper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -452,6 +477,7 @@
 				534E30C721F94C210084FF31 /* GeneralNavBar.swift in Sources */,
 				539CC3C021FA8EF80033A4B3 /* UIViewController+HideKeyboard.swift in Sources */,
 				53FDB44F21FB9AB3001E09D8 /* ProfileViewController.swift in Sources */,
+				533D15C82207C08700A998D7 /* API.swift in Sources */,
 				534E309321F8F9CC0084FF31 /* ComingSoonViewController.swift in Sources */,
 				534E30C021F935300084FF31 /* TextField.swift in Sources */,
 				539CC3BA21FA6B740033A4B3 /* FilterNavBar.swift in Sources */,

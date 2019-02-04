@@ -31,11 +31,11 @@ class ProfileLogInViewController: UIViewController {
         $0.textAlignment = .center
     }
     
-    private let emailField = StateTextField(placeholder: "Email").then {
+    let emailField = StateTextField(placeholder: "Email").then {
         $0.textField.keyboardType = .emailAddress
     }
     
-    private let passwordField = StateTextField(placeholder: "Password").then {
+    let passwordField = StateTextField(placeholder: "Password").then {
         $0.textField.keyboardType = .default
         $0.textField.isSecureTextEntry = true
     }
@@ -73,8 +73,13 @@ extension ProfileLogInViewController {
     func setupProperties() {
         view.backgroundColor = UI.Colors.white
         
-        logInButton.buttonTapHandler = { self.delegate?.didTapLogin() }
+        logInButton.buttonTapHandler = { self.loginTapped() }
         signUpButton.buttonTapHandler = { self.delegate?.didTapSignUp() }
+    }
+    
+    func loginTapped() {
+        API.Authentication.logIn(withEmail: emailField.textField.text!, password: passwordField.textField.text!)
+        delegate?.didTapLogin()
     }
     
     func layoutViews() {

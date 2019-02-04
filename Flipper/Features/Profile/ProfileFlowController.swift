@@ -74,7 +74,10 @@ extension ProfileFlowController: GeneralNavBarDelegate {
 
 extension ProfileFlowController: ProfileLogInViewDelegate {
     func didTapLogin() {
-        
+        API.Authentication.logOut()
+        print("\(API.Authentication.isLoggedIn())")
+        remove(childController: logInViewController)
+        add(childController: profileViewController)
     }
     
     func didTapSignUp() {
@@ -86,6 +89,6 @@ extension ProfileFlowController: ProfileLogInViewDelegate {
 extension ProfileFlowController: ProfileSignUpViewDelegate {
     func didSignUp() {
         remove(childController: signUpViewController)
-        add(childController: profileViewController)
+        add(childController: logInViewController)
     }
 }
