@@ -71,7 +71,7 @@ class ProfileLogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
     }
 }
 
@@ -108,17 +108,5 @@ extension ProfileLogInViewController: StateTextFieldDelegate {
     func textFieldShouldReturn(_ textField: StateTextField) -> Bool {
         textField.endEditing(true)
         return false
-    }
-}
-
-extension ProfileLogInViewController {
-    func login(withEmail email: String, password: String, _ callback: ((Error?) -> ())? = nil){
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            if let e = error{
-                callback?(e)
-                return
-            }
-            callback?(nil)
-        }
     }
 }

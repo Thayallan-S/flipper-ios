@@ -60,7 +60,7 @@ class TicketInformationViewController: UIViewController {
         view.backgroundColor = UI.Colors.white
         flightClassView.delegate = self
         
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextTicketInfo() }
         
         layoutViews()

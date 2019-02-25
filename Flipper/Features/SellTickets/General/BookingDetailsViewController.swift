@@ -41,7 +41,7 @@ class BookingDetailsViewController: UIViewController {
         
         view.backgroundColor = UI.Colors.white
         
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextBookingDetails() }
         
         layoutViews()

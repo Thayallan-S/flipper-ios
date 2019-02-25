@@ -76,7 +76,7 @@ extension SellTicketsViewController: GMSAutocompleteFetcherDelegate {
 
 extension SellTicketsViewController {
     func setupProperties() {
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.dimissInitialView() }
     }
     func layoutViews() {

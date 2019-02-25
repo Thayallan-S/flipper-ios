@@ -10,6 +10,8 @@ import UIKit
 import EasyPeasy
 import Then
 
+import Firebase
+
 protocol ProfileViewDelegate: class {
     func didTapGetStartedPurchased()
     func didTapGetStartedSold()
@@ -79,6 +81,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        API.Users.Read.getProfileInformation()
         view.backgroundColor = UI.Colors.white
         
         setupProperties()

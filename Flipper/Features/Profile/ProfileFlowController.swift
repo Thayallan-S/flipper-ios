@@ -21,6 +21,8 @@ class ProfileFlowController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
+        
+        
         profileOnboardingViewController.delegate = self
         logInViewController.headerNavBar.delegate = self
         logInViewController.delegate = self
@@ -77,8 +79,7 @@ extension ProfileFlowController: GeneralNavBarDelegate {
 
 extension ProfileFlowController: ProfileLogInViewDelegate {
     func didTapLogin() {
-        logInViewController.login(withEmail: logInViewController.emailField.textField.text!, password: logInViewController.passwordField.textField.text!)
-        print("\(Auth.auth().currentUser?.email)")
+        
     }
     
     func didTapSignUp() {
@@ -89,8 +90,20 @@ extension ProfileFlowController: ProfileLogInViewDelegate {
 
 extension ProfileFlowController: ProfileSignUpViewDelegate {
     func didSignUp() {
-        print("\(signUpViewController.emailField.textField.text!)")
-        print("\(signUpViewController.passwordField.textField.text!)")
-        signUpViewController.createUser(email: signUpViewController.emailField.textField.text! , password: signUpViewController.passwordField.textField.text!)
+        API.Authentication.signUp(firstName: signUpViewController.firstNameField.textField.text!, lastName: signUpViewController.lastNameField.textField.text!, email: signUpViewController.emailField.textField.text!, password: signUpViewController.passwordField.textField.text!)
+        
+        
+        
+        let deadline = DispatchTime.now() + 3
+        DispatchQueue.main.asyncAfter(deadline: deadline, execute: {
+            if API.Authentication.currentUser() != nil {
+                self.remove(childController: self.signUpViewController)
+                self.add(childController: self.profileViewController)
+                print("\(API.Authentication.currentUser()?.email)")
+            }
+        })
+        
+        
+        
     }
 }

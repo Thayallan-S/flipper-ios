@@ -27,8 +27,8 @@ class ProfileSignUpViewController: UIViewController {
         $0.viewTag = 1
     }
     
-    private let firstNameField = StateTextField(placeholder: "First Name")
-    private let lastNameField = StateTextField(placeholder: "Last Name")
+    let firstNameField = StateTextField(placeholder: "First Name")
+    let lastNameField = StateTextField(placeholder: "Last Name")
     let emailField = StateTextField(placeholder: "Email").then {
         $0.textField.keyboardType = .emailAddress
     }
@@ -50,7 +50,7 @@ class ProfileSignUpViewController: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         signUpButton.buttonTapHandler = { self.delegate?.didSignUp() }
         
         layoutViews()
@@ -87,16 +87,4 @@ extension ProfileSignUpViewController: StateTextFieldDelegate {
     }
 }
 
-extension ProfileSignUpViewController {
-    func createUser(email: String, password: String, _ callback: ((Error?) -> ())? = nil){
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            if let e = error{
-                callback?(e)
-                return
-            }
-            callback?(nil)
-        }
-    }
-    
-    func 
-}
+

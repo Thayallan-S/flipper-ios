@@ -39,7 +39,7 @@ class ListPriceViewController: UIViewController {
         
         view.backgroundColor = UI.Colors.white
         
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextListPrice() }
         
         layoutViews()

@@ -43,7 +43,7 @@ class PurchaseTicketsViewController: UIViewController {
 extension PurchaseTicketsViewController {
     func setupProperties() {
         view.backgroundColor = UI.Colors.white
-        self.hideKeyboardWhenTappedAround()
+        //self.hideKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextPurchaseTickets()}
     }
     

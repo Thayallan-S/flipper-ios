@@ -41,7 +41,7 @@ class SearchesViewController: UIViewController {
 extension SearchesViewController {
     func setupProperties() {
         view.backgroundColor = UI.Colors.white
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = {  }
     }
     

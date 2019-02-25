@@ -28,7 +28,7 @@ class SellTicketsAirlineViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
-        self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         nextButton.buttonTapHandler = { self.delegate?.didTapNextAirline() }
         
         
